@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Builder</title>
+  <link rel="stylesheet" type="text/css" href="/css/new.css">
+  <script src="/js/formm.js"></script>
+</head>
+<body>
+    <div class="content">
+
+    <div class="sidebar">  
+
+      <a href="/home"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a href="/newsurvey"><i class="fa fa-fw fa-wrench"></i> New Survey</a>
+      <a href="/response"><i class="fa fa-fw fa-user"></i> Responses</a>
+      <a href="/profile"><i class="fa fa-fw fa-envelope"></i>Profile</a>
+      <a href="/auth/logout"><i class="fa fa-fw fa-envelope"></i> Logout</a>
+    </div>
+    <div class="container">
+      <div class="head">
+        <h1>Create Survey</h1>
+        {{#if msg}}
+         <p class="{{msg_type}}">{{msg}}</p>
+         {{/if}}
+      </div>
+      <div class="box" id="question-type-container">
+        <form id="question-form" class="question-form"  action="/auth/newsurvey" method="post">
+          <label for="survey-title">Enter Survey Title:</label>
+          <input type="text" name="title" id="survey-title">
+          <br><br>
+          <label for="survey-title">Enter Creater name:</label>
+          <input type="text" name="cname" id="cname">
+          <br><br>
+          <label for="survey-date">Survey Created Date:</label>
+          <input type="date" name="date" id="survey-date">
+          <br><br>
+          <label for="question-type">Select Question Type:</label>
+          <select id="question-type" name="question_type">
+            <option value="radio">Radio</option>
+            <option value="checkbox">Checkbox</option>
+            <option value="textarea">Text</option>
+          </select>
+          <br><br>
+          <button type="button" onclick="addQuestion()">Create Question</button>
+          <button type="submit">Publish Survey</button>
+          <button type="button" onclick="saveDraft()">Save as Draft</button>
+          <br><br>
+          <div id="questions-container"></div>
+        </form>
+  
+      </div>
+  
+      <div id="preview-container" class="preview-container"></div>
+  
+    </div>
+</div>
+
+  </body>
+  
+</html>

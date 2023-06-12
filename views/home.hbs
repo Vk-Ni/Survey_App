@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
+    <title>Admin</title>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="#home">Survey Logo</a>
+
+
+
+        </div>
+      </div>
+    <div class="sidebar">  
+
+      <a href="/home"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a href="/newsurvey"><i class="fa fa-fw fa-wrench"></i> New Survey</a>
+      <a href="/response"><i class="fa fa-fw fa-user"></i> Responses</a>
+      <a href="/profile"><i class="fa fa-fw fa-envelope"></i>Profile</a>
+      <a href="/auth/logout"><i class="fa fa-fw fa-envelope"></i> Logout</a>
+    </div>
+
+
+
+      <!-- Content area -->
+  <div class="content">
+    <div class="topnav">
+      <a class= href="#home">Survey List</a>
+      
+    </div>
+    <!-- Table -->
+    <table>
+      <thead name="survey_list" id="survey_list">
+        <tr>
+          <th>Survey_ID</th>
+          <th>Survey_Name</th>
+          <th>Survey_Creator</th>
+          <th>Date of creation</th>
+          <th>Active_Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each rows}}
+         <tr>
+          <td>{{this.Survey_id}}</td>
+          <td>{{this.Survey_name}}</td>
+          <td>{{this.Survey_id}}</td>
+          <td>{{this.Survey_id}}</td>
+         </tr>
+        {{/each}}
+
+        
+      </tbody>
+    </table>
+  </div>
+
+  <div class="content">
+    <div class="topnav">
+      <a class= href="#home">Drafted List</a>
+      
+    </div>
+    <!-- Table -->
+    <table name="drafted_list" id="drafted_lift">
+      <thead>
+        <tr>
+          <th>Survey_ID</th>
+          <th>Survey_Name</th>
+          <th>Survey_Creator</th>
+          <th>Date of creation</th>
+          <th>To be finished</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+      </tbody>
+    </table>
+  </div>
+    
+
+    
+    
+
+
+         
+    </body>
+
+
+    
+    
+
+    
+    
+
+
+         
+
+</html>

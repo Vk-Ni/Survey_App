@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    
+
+}
+
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: rgb(228, 226, 226);
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: block;
+    background: #fff;
+    width: 410px;
+    padding: 30px;
+    box-shadow: rgba(50, 50,93, 0.25) 0px 6px 12px
+    -2px rgba(0, 0,0, 0.3) 0px 3px 7px -3px;
+}
+
+.container form{
+    margin-top: -20px;
+}
+.container .text{
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(198, 71, 71);
+}
+
+.container form .data{
+    height: 45px;
+    width: 100%;
+    margin: 40px 0;
+}
+
+form .data label{
+    font-size: 20px;
+}
+
+form .data input{
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 18px;
+    border: 1px solid silver;
+}
+
+form .data input:focus{
+    border-color: red;
+    border-bottom-width: 3px;
+
+}
+
+form .forgot_pass{
+    margin-top: -8px;
+}
+
+form .forgot_pass a{
+    color: rgb(181, 57, 57);
+    text-decoration: none;    
+}
+
+form .forgot_pass a:hover{
+    text-decoration: underline;    
+}
+
+
+
+
+form .btn{
+    margin: 30px 0;
+    height: 45px;
+    width: 100%;
+}
+
+form .btn button{
+    height: 100%;
+    width: 100%;
+    background: none;
+    border: none;
+    color: black;
+    background: rgb(212, 87, 87);
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+form .signup-link{
+    text-align: center;
+
+}
+
+form .signup-link a{
+    color: red;
+    text-decoration: none;    
+}
+
+form .signup-link a:hover{
+    text-decoration: underline;    
+}
+
+
+.error{
+    color:rgb(120, 120, 228);
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+.good{
+    color:green;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
